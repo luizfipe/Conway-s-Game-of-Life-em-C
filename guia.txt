@@ -1,0 +1,17 @@
+O projeto é baseado no Jogo da Vida de Conway e usa as mesmas regras do jogo
+
+A lógica principal fica na função void simulacao() em que ele copia uma matriz para outra e analisa a matriz copiada para alterar
+a matriz principal, a cópia acaba sendo necessária já que quando eu modifico a matriz principal antes de analisar tudo, a analisa
+acaba errada. Na função ela analisa os espaços adjacentes de um ponto ij da matriz e define se aquela célula vive ou morre.
+Depois disso apenas printo a matriz modificada.
+
+Agora tem o uso de arquivos para as simulações prontas, e salvar suas próprias simulações. As funções do conteúdo de arquivos que foram
+usadas foram: fopen, fputc, fgetc, fwrite, fread e fseek.
+
+Trabalho feito por: Luiz Felipe Brilhante dos Santos Mendes - 202401806
+
+linha de compilação que usei para rodar no Ubuntu dos computadores do laboratório:
+gcc GoL.c -o game
+
+
+Obs: recomendo testar com o terminal em tela cheia ou pelo menos com um bom tamanho.
